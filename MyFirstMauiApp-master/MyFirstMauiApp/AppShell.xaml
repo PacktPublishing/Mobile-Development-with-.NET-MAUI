@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MyFirstMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MyFirstMauiApp"
+    Shell.FlyoutBehavior="Flyout">
+    <TabBar>
+        <Tab Title="Main Page" Icon="dotnet_bot.png">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            
+            Route="MainPage" />
+        </Tab>
+        <Tab Title="Layout" Icon="dotnet_bot.png">
+            <ShellContent
+        Title="Layout Example"
+        ContentTemplate="{DataTemplate local:LayoutExample}"
+        Route="LayoutExample" />
+        </Tab>
+        <Tab Title="New Page" Icon="dotnet_bot.png">
+            <ShellContent
+        Title="New Page 1"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="NewPage1" />
+        </Tab>
+        <Tab Title="Test Page" Icon="dotnet_bot.png">
+            <ShellContent
+        Title="Test Page"
+        ContentTemplate="{DataTemplate local:TestPage}"
+        Route="TestPage" />
+        </Tab>
+    </TabBar>
+    
+   
+    
+   
+
+</Shell>

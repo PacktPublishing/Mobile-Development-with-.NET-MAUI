@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMauiApp.NewPage1"
+             xmlns:resources="clr-namespace:MyFirstMauiApp.Resources"
+             Title="NewPage1">
+    <StackLayout>
+        <Label Text="Count: 0"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+               x:Name="lblCounter"
+               FontSize="22"
+               TextColor="{x:Static Member=resources:SharedResources.FontColour}"
+               FontAttributes="Bold" IsEnabled="True"/>
+
+        <Button 
+            Text="Click To Count"
+            Clicked="Button_Clicked"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            
+            />
+    </StackLayout>
+</ContentPage>
